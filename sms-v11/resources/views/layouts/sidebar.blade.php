@@ -18,12 +18,12 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-blank.html">
+                <a class="sidebar-link" href="{{url('/panel/users')}}">
                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Users</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-blank.html">
+                <a class="sidebar-link" href="{{url('/panel/roles')}}">
                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Roles</span>
                 </a>
             </li>

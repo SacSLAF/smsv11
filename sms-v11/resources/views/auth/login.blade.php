@@ -32,7 +32,7 @@
                                 Sign in to your account to continue
                             </p>
                         </div>
-                        @include('auth.message')
+                        @include('panel.message')
                         <div class="card">
                             <div class="card-body">
                                 <div class="m-sm-3">
