@@ -5,24 +5,24 @@
         </a>
 
         <ul class="sidebar-nav">
-            <li class="sidebar-item active">
+            <li class="sidebar-item @if (Request::segment(2) == 'dashboard') active @endif">
                 <a class="sidebar-link" href="{{ url('/panel/dashboard') }}">
                     <i class="align-middle" data-feather="sliders"></i> <span
                         class="align-middle">Dashboard</span>
                 </a>
             </li>
 
-            <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
+            <li class="sidebar-item @if (Request::segment(2) == 'profile') active @endif">
+                <a class="sidebar-link" href="{{url('/panel/profile')}}">
                     <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
                 </a>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item @if (Request::segment(2) == 'users') active @endif">
                 <a class="sidebar-link" href="{{url('/panel/users')}}">
                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Users</span>
                 </a>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item @if (Request::segment(2) == 'roles') active @endif">
                 <a class="sidebar-link" href="{{url('/panel/roles')}}">
                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Roles</span>
                 </a>
