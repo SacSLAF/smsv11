@@ -24,12 +24,32 @@
             </li>
             <li class="sidebar-item @if (Request::segment(2) == 'roles') active @endif">
                 <a class="sidebar-link" href="{{url('/panel/roles')}}">
-                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Roles</span>
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Role</span>
                 </a>
             </li>
-            <li class="sidebar-item">
+            {{-- <li class="sidebar-item">
                 <a class="sidebar-link" href="pages-blank.html">
                     <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+                </a>
+            </li> --}}
+            <li class="sidebar-item @if (Request::segment(2) == 'categories') active @endif">
+                <a class="sidebar-link" href="{{url('/panel/categories')}}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Category</span>
+                </a>
+            </li>
+            <li class="sidebar-item @if (Request::segment(2) == 'subcategories') active @endif">
+                <a class="sidebar-link" href="{{url('/panel/subcategories')}}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Sub Category</span>
+                </a>
+            </li>
+            <li class="sidebar-item @if (Request::segment(2) == 'products') active @endif">
+                <a class="sidebar-link" href="{{url('/panel/products')}}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Products</span>
+                </a>
+            </li>
+            <li class="sidebar-item @if (Request::segment(2) == 'settings') active @endif">
+                <a class="sidebar-link" href="{{url('/panel/settings')}}">
+                    <i class="align-middle" data-feather="book"></i> <span class="align-middle">Settings</span>
                 </a>
             </li>
         </ul>
